@@ -128,7 +128,45 @@ int z3_3() {
     return 0;
 }
 
+int z4 () {
+    setlocale(LC_CTYPE, "RUS");
+
+    printf("\nПоследовательное вычисление:\n");
+
+    printf("\n1. Тип int:\n");
+    for (int i = 0; i <= 31; i++) {
+        int r = 1 << i;
+        printf("2^%d = %d\n", i, r);
+        if (r < 0) {
+            printf("Переполнение - число стало отрицательным\n");
+            break;
+        }
+    }
+
+    printf("\n2. Тип unsigned int:\n");
+    for (int i = 0; i <= 32; i++) {
+        if (i == 32) {
+            printf("Переполнение - при 2^32 число начинает зацикливаться\n");
+            break;
+        }
+        unsigned int r = 1u << i;
+        printf("2^%d = %u\n", i, r);
+    }
+
+    printf("\n3. Тип long long:\n");
+    for (int i = 0; i <= 63; i++) {
+        long long r = 1LL << i;
+        printf("2^%d = %lld\n", i, r);
+        if (r < 0) {
+            printf("Переполнение - число стало отрицательным\n");
+            break;
+        }
+    }
+
+    return 0;
+}
+
 int main() {
 
-    z3_2();
+    z4();
 }
