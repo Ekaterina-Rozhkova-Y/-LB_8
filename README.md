@@ -30,12 +30,6 @@
 
 
 
-### Результат выполнения программы
-
-
-<img width="311" height="101" alt="image" src="https://github.com/user-attachments/assets/b7239c68-f52d-493e-a4e8-6f9dd63efd17" />
-
-
 ## Код программы
 
 int DZ() 
@@ -77,6 +71,11 @@ int main() {
     DZ
 ();
 }
+
+### Результат выполнения программы
+
+
+<img width="311" height="101" alt="image" src="https://github.com/user-attachments/assets/b7239c68-f52d-493e-a4e8-6f9dd63efd17" />
 
 
 ### Разработчик
