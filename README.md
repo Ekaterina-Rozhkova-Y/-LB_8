@@ -32,7 +32,51 @@
 
 ### Результат выполнения программы
 
+
 <img width="311" height="101" alt="image" src="https://github.com/user-attachments/assets/b7239c68-f52d-493e-a4e8-6f9dd63efd17" />
+
+
+## Код программы
+
+int DZ() 
+{
+    setlocale(LC_CTYPE, "RUS");
+
+
+    double a;
+    double b;
+    double h;
+    double p = 1.0;
+    double x;
+
+
+    printf("Введите начальное значение a: ");
+    scanf("%lf", &a);
+
+    printf("Введите конечное значение b: ");
+    scanf("%lf", &b);
+
+    printf("Введите шаг h: ");
+    scanf("%lf", &h);
+
+    int s = (int)round((b - a) / h) + 1;
+
+    for (int i = 0; i < s; i++) {
+        x = a + i * h; 
+        p = p * (1.0 + sin(x)); 
+    }
+
+
+    printf("Результат = %.6lf\n", p);
+
+    return 0;
+}
+
+int main() {
+
+    DZ
+();
+}
 
 
 ### Разработчик
